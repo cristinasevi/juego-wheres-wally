@@ -27,22 +27,101 @@
             if (value == 5) {
                 window.open("nivel5.html", "_self")
             }
+            if (value == 6) {
+                window.open("nivel6.html", "_self")
+            }
         }
     </script>
 </head>
 
-<body>
-    <img src="" width="">
-    <img src="" width="">
-    <img src="" width="">
-    <img src="" width="">
-    <img src="" width="">
+<body class="fondo_juego">
+    <table width="100%">
+        <tr>
+            <td colspan="4" align="center" height="200px">
+                <font color="white" size="20" style="font-family: 'optima-extrablack'"><b>NIVELES</b></font>
+            </td>
+        </tr>
+        <tr align="center" height="300px">
+            <td>
+                <img src="./images/mapa1.jpeg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa2.jpg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa3.jpg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa4.jpg" width="300px">
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <input name="nivel1" id="nivel1" class="nivel1" type="button" value="NIVEL 1" onclick="nivel(1)">
+            </td>
+            <td>
+                <input name="nivel2" id="nivel2" class="nivel2" type="button" value="NIVEL 2" onclick="nivel(2)">
+            </td>
+            <td>
+                <input name="nivel3" id="nivel3" class="nivel3" type="button" value="NIVEL 3" onclick="nivel(3)">
+            </td>
 
-    <input name="nivel1" id="nivel1" class="nivel1" type="button" value="NIVEL 1" onclick="nivel(1)">
-    <input name="nivel2" id="nivel2" class="nivel2" type="button" value="NIVEL 2" onclick="nivel(2)">
-    <input name="nivel3" id="nivel3" class="nivel3" type="button" value="NIVEL 3" onclick="nivel(3)">
-    <input name="nivel4" id="nivel4" class="nivel4" type="button" value="NIVEL 4" onclick="nivel(4)">
-    <input name="nivel5" id="nivel5" class="nivel5" type="button" value="NIVEL 5" onclick="nivel(5)">
+            <td>
+                <input name="nivel4" id="nivel4" class="nivel4" type="button" value="NIVEL 4" onclick="nivel(4)">
+            </td>
+        </tr>
+        <tr align="center" height="300px">
+            <td>
+                <img src="./images/mapa5.jpeg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa6.jpg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa7.jpg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa8.jpg" width="300px">
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <input name="nivel5" id="nivel5" class="nivel5" type="button" value="NIVEL 5" onclick="nivel(5)">
+            </td>
+            <td>
+                <input name="nivel6" id="nivel6" class="nivel6" type="button" value="NIVEL 6" onclick="nivel(6)">
+            </td>
+            <td>
+                <input name="nivel7" id="nivel7" class="nivel7" type="button" value="NIVEL 7" onclick="nivel(7)">
+            </td>
+            <td>
+                <input name="nivel8" id="nivel8" class="nivel8" type="button" value="NIVEL 8" onclick="nivel(8)">
+            </td>
+        </tr>
+        <tr align="center" height="300px">
+            <td colspan="2">
+                <img src="./images/mapa9.jpg" width="300px">
+            </td>
+            <td colspan="2">
+                <img src="./images/mapa10.jpg" width="300px">
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <input name="nivel9" id="nivel9" class="nivel9" type="button" value="NIVEL 9" onclick="nivel(9)">
+            </td>
+            <td colspan="2">
+                <input name="nivel10" id="nivel10" class="nivel10" type="button" value="NIVEL 10" onclick="nivel(10)">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
 
     <!-- Hacer que aparezcan todos los niveles un boton para acceder a cada uno y una imagen de como sería el
         nivel -->
