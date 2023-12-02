@@ -1,37 +1,38 @@
 .fondo_portada {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     background-color: #017bc6;
 }
 
-.botones_inicio {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    background-color: red;
-    /* top: 15px;
-    right: 0; */
+.contenedor {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.botoninicio1{
+.imagen_portada {
+    padding: 0 50px;
+}
+
+.botones_portada {
+    padding: 0 300px;
+}
+
+.botones_portada input {
     display: block;
 }
 
-.botoninicio2{
-    display: block;
+.botoninicio1,
+.botoninicio2,
+.botoninicio3 {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
 }
-
-.botoninicio3{
-    display: block;
-} 
-
-/* .imagen_personajes {
-    position: absolute;
-    left: 0;
-    top: 130px
-} */
-/* .botonesinicio {
-    position: absolute;
-    right: 100px;
-    top: 100px;
-}
-
-*/
