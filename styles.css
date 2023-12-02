@@ -1,0 +1,37 @@
+.fondo_portada {
+    background-color: #017bc6;
+}
+
+.botones_inicio {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    background-color: red;
+    /* top: 15px;
+    right: 0; */
+}
+
+.botoninicio1{
+    display: block;
+}
+
+.botoninicio2{
+    display: block;
+}
+
+.botoninicio3{
+    display: block;
+} 
+
+/* .imagen_personajes {
+    position: absolute;
+    left: 0;
+    top: 130px
+} */
+/* .botonesinicio {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+*/
