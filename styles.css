@@ -23,7 +23,7 @@
     padding: 0 50px;
 }
 
-.botones_portada {
+.boton_portada {
     padding: 0 300px;
 }
 
@@ -31,9 +31,7 @@
     display: block;
 }
 
-.botoninicio1,
-.botoninicio2,
-.botoninicio3 {
+.botoninicio{
     margin-bottom: 50px;
     font-size: 17px;
     color: rgb(155, 70, 70);
@@ -55,3 +53,6 @@
 .fondo_niveles {
     background-color: #222;
 }
+
+
+
