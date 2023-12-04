@@ -11,12 +11,22 @@
     <link rel="shortcut icon" type="image/png" href="./images/wally_sinfondo.png" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script language="JavaScript">
+        function salir() {
+            window.open("juego.html", "_self")
+        }
+        function ayuda() {
 
+        }
     </script>
 </head>
 
 <body class="fondo_niveles">
-
+    <div>
+        <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
+            onclick="salir()">
+        <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
+            onclick="ayuda()">
+    </div>
 </body>
 
 </html>

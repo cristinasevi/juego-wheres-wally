@@ -54,5 +54,16 @@
     background-color: #222;
 }
 
+.botones_niveles input{
+    font-size: 17px;
+    color: rgb(155, 70, 70);
+    font-family:'optima-extrablack';
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
 
 
