@@ -39,9 +39,6 @@
             if (value == 9) {
                 window.open("nivel9.html", "_self")
             }
-            if (value == 10) {
-                window.open("nivel10.html", "_self")
-            }
         }
     </script>
 </head>
@@ -49,22 +46,19 @@
 <body class="fondo_juego">
     <table width="100%">
         <tr>
-            <td colspan="4" align="center" height="200px">
+            <td colspan="3" align="center" height="200px">
                 <font color="white" size="20" style="font-family: 'optima-extrablack'"><b>NIVELES</b></font>
             </td>
         </tr>
         <tr align="center" height="300px">
             <td>
-                <img src="./images/mapa1.jpeg" width="300px">
+                <img src="./images/mapa1.jpg" width="300px">
             </td>
             <td>
                 <img src="./images/mapa2.jpg" width="300px">
             </td>
             <td>
                 <img src="./images/mapa3.jpg" width="300px">
-            </td>
-            <td>
-                <img src="./images/mapa4.jpg" width="300px">
             </td>
         </tr>
         <tr align="center" class="botones_niveles">
@@ -80,27 +74,23 @@
                 <input name="nivel3" id="nivel3" class="nivel3" type="button" value="NIVEL 3" style="cursor:pointer"
                     onclick="nivel(3)">
             </td>
-
-            <td>
-                <input name="nivel4" id="nivel4" class="nivel4" type="button" value="NIVEL 4" style="cursor:pointer"
-                    onclick="nivel(4)">
-            </td>
         </tr>
         <tr align="center" height="300px">
+            <td>
+                <img src="./images/mapa4.jpg" width="300px">
+            </td>
             <td>
                 <img src="./images/mapa5.jpeg" width="300px">
             </td>
             <td>
                 <img src="./images/mapa6.jpg" width="300px">
             </td>
-            <td>
-                <img src="./images/mapa7.jpg" width="300px">
-            </td>
-            <td>
-                <img src="./images/mapa8.jpg" width="300px">
-            </td>
         </tr>
         <tr align="center" class="botones_niveles">
+            <td>
+                <input name="nivel4" id="nivel4" class="nivel4" type="button" value="NIVEL 4" style="cursor:pointer"
+                    onclick="nivel(4)">
+            </td>
             <td>
                 <input name="nivel5" id="nivel5" class="nivel5" type="button" value="NIVEL 5" style="cursor:pointer"
                     onclick="nivel(5)">
@@ -109,6 +99,19 @@
                 <input name="nivel6" id="nivel6" class="nivel6" type="button" value="NIVEL 6" style="cursor:pointer"
                     onclick="nivel(6)">
             </td>
+        </tr>
+        <tr align="center" height="300px">
+            <td>
+                <img src="./images/mapa7.jpg" width="300px">
+            </td>
+            <td>
+                <img src="./images/mapa8.jpg" width="300px">
+            </td>
+            <td colspan="2">
+                <img src="./images/mapa9.jpg" width="300px">
+            </td>
+        </tr>
+        <tr align="center" class="botones_niveles">
             <td>
                 <input name="nivel7" id="nivel7" class="nivel7" type="button" value="NIVEL 7" style="cursor:pointer"
                     onclick="nivel(7)">
@@ -117,23 +120,9 @@
                 <input name="nivel8" id="nivel8" class="nivel8" type="button" value="NIVEL 8" style="cursor:pointer"
                     onclick="nivel(8)">
             </td>
-        </tr>
-        <tr align="center" height="300px">
-            <td colspan="2">
-                <img src="./images/mapa9.jpg" width="300px">
-            </td>
-            <td colspan="2">
-                <img src="./images/mapa10.jpg" width="300px">
-            </td>
-        </tr>
-        <tr align="center" class="botones_niveles">
             <td colspan="2">
                 <input name="nivel9" id="nivel9" class="nivel9" type="button" value="NIVEL 9" style="cursor:pointer"
                     onclick="nivel(9)">
-            </td>
-            <td colspan="2">
-                <input name="nivel10" id="nivel10" class="nivel10" type="button" value="NIVEL 10" style="cursor:pointer"
-                    onclick="nivel(10)">
             </td>
         </tr>
     </table>
