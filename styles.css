@@ -21,9 +21,10 @@
 .conte-degradado{
     height: 100%;
     width: 100%;
-    position: absolute;
+    position:absolute;
     top: 0px;
     left: 0px;
+    cursor:pointer;
 }
 
 /* PÁGINA PORTADA */
@@ -98,10 +99,8 @@
 
 .botones_atajos {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between;
     align-items:center;
+    margin-top: 200px; */
 }
-
-
-
-

@@ -17,27 +17,45 @@
         function ayuda() {
 
         }
+
+        function wally(event) {
+        // Obtener las coordenadas del clic
+        const x = event.clientX;
+        const y = event.clientY;
+
+        // Definir las coordenadas de la zona clickeable
+        const zonaXInicio = 802;
+        const zonaXFin = 825;
+        const zonaYInicio = 189;
+        const zonaYFin = 222;
+     
+        // Verificar si el clic está dentro de la zona
+        if (x >= zonaXInicio && x <= zonaXFin && y >= zonaYInicio && y <= zonaYFin) 
+        {
+            window.alert("Lo has encontrado!")
+        }
+        }
     </script>
 </head>
 
 <body class="fondo_niveles">
-    <div class="botones_atajos">
-        <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
-            onclick="salir()">
-        <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
-            onclick="ayuda()">
-    </div>
-
+    
     <div class="conte-padre">
-        <div class="conte-texto" align="center">
+        <div>
             <img src="./images/mapa7.jpg" usemap="#mapa7">
-        <map name="mapa7">
-            <area target="" alt="" title="" href="" coords="802,189,825,222" shape="rect" style="cursor:auto" onclick="wally()">
-        </map>
+            <map name="mapa7">
+                <area target="" alt="" title="" href="" coords="802,189,825,222" shape="rect" style="cursor:auto">
+            </map>
         </div>
-        <div class="conte-degradado"></div>
+        <div class="conte-degradado" onclick="wally(event)"></div>
     </div>
 
+    <div class="botones_atajos">
+            <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
+                onclick="salir()">
+            <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
+                onclick="ayuda()">
+        </div>
     <script src="./index.js"></script>
 </body>
 

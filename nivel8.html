@@ -17,27 +17,44 @@
         function ayuda() {
 
         }
+        function wally(event) {
+        // Obtener las coordenadas del clic
+        const x = event.clientX;
+        const y = event.clientY;
+
+        // Definir las coordenadas de la zona clickeable
+        const zonaXInicio = 498;
+        const zonaXFin = 518;
+        const zonaYInicio = 131;
+        const zonaYFin = 162;
+     
+        // Verificar si el clic está dentro de la zona
+        if (x >= zonaXInicio && x <= zonaXFin && y >= zonaYInicio && y <= zonaYFin) 
+        {
+            window.alert("Lo has encontrado!")
+            // PONER CONFETTI
+        }
+        }
     </script>
 </head>
 
 <body class="fondo_niveles">
-    <div class="botones_atajos">
-        <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
-            onclick="salir()">
-        <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
-            onclick="ayuda()">
-    </div>
-
+    
     <div class="conte-padre">
-        <div class="conte-texto" align="center">
+        <div>
             <img src="./images/mapa8.jpg" usemap="#mapa8">
-        <map name="mapa8">
-            <area target="" alt="" title="" href="" coords="" shape="rect" style="cursor:auto" onclick="wally()">
-        </map>
+            <map name="mapa8">
+                <area target="" alt="" title="" href="" coords="498,131,518,162" shape="rect" style="cursor:auto">
+            </map>
         </div>
-        <div class="conte-degradado"></div>
+        <div class="conte-degradado" onclick="wally(event)"></div>
     </div>
-
+    <div class="botones_atajos">
+            <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
+                onclick="salir()">
+            <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
+                onclick="ayuda()">
+    </div>
     <script src="./index.js"></script>
 </body>
 

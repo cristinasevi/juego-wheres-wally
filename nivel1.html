@@ -18,8 +18,23 @@
 
         }
 
-        function wally() {
-            
+        function wally(event) {
+        // Obtener las coordenadas del clic
+        const x = event.clientX;
+        const y = event.clientY;
+
+        // Definir las coordenadas de la zona clickeable
+        const zonaXInicio = 784;
+        const zonaXFin = 820;
+        const zonaYInicio = 42;
+        const zonaYFin = 75;
+     
+        // Verificar si el clic está dentro de la zona
+        if (x >= zonaXInicio && x <= zonaXFin && y >= zonaYInicio && y <= zonaYFin) 
+        {
+            window.alert("Lo has encontrado!")
+            // PONER CONFETTI
+        }
         }
 
         function tiempo() {
@@ -30,21 +45,21 @@
 </head>
 
 <body class="fondo_niveles" onload="tiempo()">
+
+    <div class="conte-padre">
+        <div>
+            <img src="./images/mapa1.jpg" name="img_01" id="img_01" usemap="#mapa1">
+            <map name="mapa1">
+                <area href="fin.html" target="" coords="784,42,820,75" shape="rect" >             
+            </map>
+        </div> 
+        <div class="conte-degradado" onclick="wally(event)"></div> 
+    </div>
     <div class="botones_atajos">
         <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
             onclick="salir()">
         <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
             onclick="ayuda()">
-    </div>
-
-    <div class="conte-padre">
-        <div class="conte-texto" align="center">
-            <img src="./images/mapa1.jpg" usemap="#mapa1">
-            <map name="mapa1">
-                <area href="" target="" coords="784,42,820,75" shape="rect" style="cursor: auto;" onclick="wally()">
-            </map>
-        </div>
-        <div class="conte-degradado"></div>
     </div>
 
     <!-- Poner CONTADOR DE TIEMPO 
