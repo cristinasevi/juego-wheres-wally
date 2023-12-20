@@ -34,6 +34,19 @@
             window.alert("Lo has encontrado!")
         }
         }
+
+        var id = setInterval("tiempo()",1000);
+        var segundos = 0;
+        function tiempo(){
+            segundos += 1;
+	        Tiempo2.value=segundos;
+            if (segundos==60){
+                segundos = 0;
+                var minutos = parseInt(Tiempo.value, 10) || 0; // Se pone 0 para q este vacío mientras no ha llegado al minuto
+                minutos += 1;
+                Tiempo.value = minutos; 
+            }
+        }
     </script>
 </head>
 
@@ -49,11 +62,15 @@
         <div class="conte-degradado" onclick="wally(event)"></div>
     </div>
     <div class="botones_atajos">
-            <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
-                onclick="salir()">
-            <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
-                onclick="ayuda()">
-        </div>
+        <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
+            onclick="salir()">
+        <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
+            onclick="ayuda()">
+    </div>
+    <div align="center">
+        <input type="text" name="Tiempo" id="Tiempo" readonly  size="1">
+        <input type="text" name="Tiempo2" id="Tiempo2" readonly  size="1">
+    </div>
     <script src="./index.js"></script>
 
 </body>
