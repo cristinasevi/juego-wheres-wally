@@ -15,63 +15,71 @@
             window.open("juego.html", "_self")
         }
         function ayuda() {
-
+            conte_degradado.style.display = "none";
+            div_01.align = "center";
         }
         function wally(event) {
-        // Obtener las coordenadas del clic
-        const x = event.clientX;
-        const y = event.clientY;
+            // Obtener las coordenadas del clic
+            const x = event.clientX;
+            const y = event.clientY;
 
-        // Definir las coordenadas de la zona clickeable
-        const zonaXInicio = 884;
-        const zonaXFin = 919;
-        const zonaYInicio = 475;
-        const zonaYFin = 509;
-     
-        // Verificar si el clic está dentro de la zona
-        if (x >= zonaXInicio && x <= zonaXFin && y >= zonaYInicio && y <= zonaYFin) 
-        {
-            window.alert("Lo has encontrado!")
-        }
+            // Definir las coordenadas de la zona clickeable
+            const zonaXInicio = 884;
+            const zonaXFin = 919;
+            const zonaYInicio = 475;
+            const zonaYFin = 509;
+
+            // Verificar si el clic está dentro de la zona
+            if (x >= zonaXInicio && x <= zonaXFin && y >= zonaYInicio && y <= zonaYFin) {
+                sonido.play();
+                window.alert("Lo has encontrado!");
+                window.open("fin.html", "_self")
+            }
         }
 
-        var id = setInterval("tiempo()",1000);
+        var id = setInterval("tiempo()", 1000);
         var segundos = 0;
-        function tiempo(){
+        function tiempo() {
             segundos += 1;
-	        Tiempo2.value=segundos;
-            if (segundos==60){
+            Tiempo2.value = segundos;
+            if (segundos == 60) {
                 segundos = 0;
                 var minutos = parseInt(Tiempo.value, 10) || 0; // Se pone 0 para q este vacío mientras no ha llegado al minuto
                 minutos += 1;
-                Tiempo.value = minutos; 
+                Tiempo.value = minutos;
             }
         }
     </script>
 </head>
 
-<body class="fondo_niveles">
-    
+<body class="fondo_niveles" onload="tiempo()">
+
 
     <div class="conte-padre">
-        <div>
+        <div name="div_01" id="div_01">
             <img src="./images/mapa4.jpg" style="margin-top: 20px" usemap="#mapa4">
             <map name="mapa4">
-                <area target="" href="" coords="884,475,919,509" shape="rect" style="cursor:auto">
+                <area href="fin.html" coords="884,475,919,509" shape="rect">
             </map>
         </div>
-        <div class="conte-degradado" onclick="wally(event)"></div>
+        <div class="conte-degradado" name="conte_degradado" id="conte_degradado" onclick="wally(event)"></div>
     </div>
     <div class="botones_atajos">
-            <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
-                onclick="salir()">
-            <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
-                onclick="ayuda()">
+        <input name="salir" id="salir" class="salir" type="button" value="SALIR" style="cursor:pointer"
+            onclick="salir()">
+        <input name="ayuda" id="ayuda" class="ayuda" type="button" value="AYUDA" style="cursor:pointer"
+            onclick="ayuda()">
     </div>
     <div align="center">
-        <input type="text" name="Tiempo" id="Tiempo" readonly  size="1">
-        <input type="text" name="Tiempo2" id="Tiempo2" readonly  size="1">
+        <p>
+            <font color="white">Tiempo transcurrido:</font>
+        </p>
+        <input type="text" name="Tiempo" id="Tiempo" readonly size="1">
+        <input type="text" name="Tiempo2" id="Tiempo2" readonly size="1">
     </div>
+
+    <audio name="sonido" id="sonido" src="./sonido/audio1.mp3"></audio>
+
     <script src="./index.js"></script>
 </body>
 
