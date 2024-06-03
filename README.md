@@ -30,7 +30,7 @@ Este proyecto fue desarrollado como parte de la asignatura de Programación Web.
    cd juego-wheres-wally
    ```
 
-3. Abre el archivo `index.html` en tu navegador preferido para comenzar a jugar.
+3. Abre el archivo `index.html` en tu navegador para comenzar a jugar.
 
 ### Licencia
 
