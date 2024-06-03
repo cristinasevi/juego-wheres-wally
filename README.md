@@ -12,7 +12,7 @@ Este proyecto fue desarrollado como parte de la asignatura de Programación Web.
 - **Desafío Visual:** Encuentra a Wally en un entorno oscuro, aumentando la dificultad del juego.
 - **Desarrollo Educativo:** Aplicación práctica de técnicas de programación web aprendidas en la asignatura.
 
-### Tecnologías Utilizadas
+### Lenguajes Empleados
 
 - HTML
 - CSS
@@ -32,14 +32,8 @@ Este proyecto fue desarrollado como parte de la asignatura de Programación Web.
 
 3. Abre el archivo `index.html` en tu navegador preferido para comenzar a jugar.
 
-### Contribuciones
-
-¡Las contribuciones son bienvenidas! Si tienes alguna mejora o nueva característica que te gustaría añadir, no dudes en abrir una solicitud de extracción.
-
 ### Licencia
 
 Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
 ---
-
-Con esta descripción más detallada, los visitantes de tu repositorio tendrán una mejor comprensión del propósito y las características de tu proyecto.
