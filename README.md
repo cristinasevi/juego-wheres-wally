@@ -22,12 +22,12 @@ Este proyecto fue desarrollado como parte de la asignatura de Programación Web.
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/cristinasevi/juego-wheres-wally.git
    ```
 
 2. Navega al directorio del proyecto:
    ```bash
-   cd tu-repositorio
+   cd juego-wheres-wally
    ```
 
 3. Abre el archivo `index.html` en tu navegador preferido para comenzar a jugar.
