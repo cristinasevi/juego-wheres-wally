@@ -32,8 +32,4 @@ Este proyecto fue desarrollado como parte de la asignatura de Programación Web.
 
 3. Abre el archivo `index.html` en tu navegador para comenzar a jugar.
 
-### Licencia
-
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
-
 ---
